@@ -1,1 +1,571 @@
-fuyuki test
+<html>
+<head>
+    <link rel='stylesheet' id='elementor-frontend-css'  href='css/frontend-lite.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-3-css' href='css/post.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='elementor-pro-css'  href='css/frontend-lite.v2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='elementor-post-121-css'  href='css/post-121.css' type='text/css' media='all' />
+    <style id="global-styles-inline-css" type="text/css">
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+</head>
+<body class="envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-170 wp-custom-logo theme-hello-elementor woocommerce-js elementor-default elementor-template-full-width elementor-kit-3 elementor-page elementor-page-170 e--ua-blink e--ua-chrome e--ua-webkit"
+      data-elementor-device-mode="desktop" data-new-gr-c-s-check-loaded="14.1068.0" data-gr-ext-installed="">
+<div data-elementor-type="header" data-elementor-id="121" class="elementor elementor-121 elementor-location-header">
+    <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-e48fbff elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="e48fbff" data-element_type="section"
+            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+        <div class="elementor-container elementor-column-gap-no">
+            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-44df6e8"
+                 data-id="44df6e8" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-f03ea89 elementor-widget elementor-widget-heading"
+                         data-id="f03ea89" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <style>/*! elementor - v3.6.6 - 08-06-2022 */
+                            .elementor-heading-title {
+                                padding: 0;
+                                margin: 0;
+                                line-height: 1
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
+                                color: inherit;
+                                font-size: inherit;
+                                line-height: inherit
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                font-size: 15px
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                font-size: 19px
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                font-size: 29px
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                font-size: 39px
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                font-size: 59px
+                            }</style>
+                            <h4 class="elementor-heading-title elementor-size-default"><a href="#">Summer Sale Up to 50%
+                                discount</a></h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-a773a9f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="a773a9f" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-no">
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c4b07b2"
+                 data-id="c4b07b2" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <section
+                            class="elementor-section elementor-inner-section elementor-element elementor-element-c99de0f elementor-section-content-middle elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="c99de0f" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-no">
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-d8368da"
+                                 data-id="d8368da" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-8f9a7e9 elementor-widget elementor-widget-theme-site-logo elementor-widget-image"
+                                         data-id="8f9a7e9" data-element_type="widget"
+                                         data-widget_type="theme-site-logo.default">
+                                        <div class="elementor-widget-container">
+                                            <style>/*! elementor - v3.6.6 - 08-06-2022 */
+                                            .elementor-widget-image {
+                                                text-align: center
+                                            }
+
+                                            .elementor-widget-image a {
+                                                display: inline-block
+                                            }
+
+                                            .elementor-widget-image a img[src$=".svg"] {
+                                                width: 48px
+                                            }
+
+                                            .elementor-widget-image img {
+                                                vertical-align: middle;
+                                                display: inline-block
+                                            }</style>
+                                            <img width="150" height="31"
+                                                 src="https://templatekits.themewarrior.com/mint/wp-content/uploads/sites/54/2022/04/logo-mint-light.png"
+                                                 class="attachment-full size-full" alt="" loading="lazy"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5194e48"
+                                 data-id="5194e48" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-850287e elementor-nav-menu__align-right elementor-nav-menu--stretch elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu"
+                                         data-id="850287e" data-element_type="widget"
+                                         data-settings="{&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;<i class=\&quot;fas fa-angle-down\&quot;><\/i>&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}"
+                                         data-widget_type="nav-menu.default">
+                                        <div class="elementor-widget-container">
+                                            <link rel="stylesheet"
+                                                  href="https://templatekits.themewarrior.com/mint/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">
+                                            <nav migration_allowed="1" migrated="0" role="navigation"
+                                                 class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
+                                                <ul id="menu-1-850287e" class="elementor-nav-menu"
+                                                    data-smartmenus-id="1657972186502719">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-92">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/homepage/"
+                                                           aria-current="page"
+                                                           class="elementor-item elementor-item-active">Home</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/collection/"
+                                                           class="elementor-item">Collection</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-94">
+                                                        <a href="#"
+                                                           class="elementor-item elementor-item-anchor has-submenu"
+                                                           id="sm-1657972186502719-1" aria-haspopup="true"
+                                                           aria-controls="sm-1657972186502719-2" aria-expanded="false">Pages<span
+                                                                class="sub-arrow"><i
+                                                                class="fas fa-angle-down"></i></span></a>
+                                                        <ul class="sub-menu elementor-nav-menu--dropdown"
+                                                            id="sm-1657972186502719-2" role="group" aria-hidden="true"
+                                                            aria-labelledby="sm-1657972186502719-1"
+                                                            aria-expanded="false">
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/about-us/"
+                                                                   class="elementor-sub-item">About Us</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/road-map/"
+                                                                   class="elementor-sub-item">Road Map</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/faq/"
+                                                                   class="elementor-sub-item">FAQ</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/testimonials/"
+                                                                   class="elementor-sub-item">Testimonials</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-101">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/merchandise/"
+                                                                   class="elementor-sub-item has-submenu"
+                                                                   id="sm-1657972186502719-3" aria-haspopup="true"
+                                                                   aria-controls="sm-1657972186502719-4"
+                                                                   aria-expanded="false">Merchandise<span
+                                                                        class="sub-arrow"><i
+                                                                        class="fas fa-angle-down"></i></span></a>
+                                                                <ul class="sub-menu elementor-nav-menu--dropdown"
+                                                                    id="sm-1657972186502719-4" role="group"
+                                                                    aria-hidden="true"
+                                                                    aria-labelledby="sm-1657972186502719-3"
+                                                                    aria-expanded="false">
+                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102">
+                                                                        <a href="https://templatekits.themewarrior.com/mint/product/hoodie/"
+                                                                           class="elementor-sub-item">Product
+                                                                            Details</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/login-page/"
+                                                                   class="elementor-sub-item">Login</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/track-order/"
+                                                                   class="elementor-sub-item">Track Order</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/team/"
+                                                                   class="elementor-sub-item">Team</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/404/"
+                                                                   class="elementor-sub-item">404</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/coming-soon/"
+                                                                   class="elementor-sub-item">Coming soon</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108">
+                                                                <a href="https://templatekits.themewarrior.com/mint/?elementor_library=popup-banners"
+                                                                   class="elementor-sub-item">Popups Banner</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/blog/"
+                                                           class="elementor-item">Blog</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/contact-us/"
+                                                           class="elementor-item">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                            <div class="elementor-menu-toggle" role="button" tabindex="0"
+                                                 aria-label="Menu Toggle" aria-expanded="false" style="">
+                                                <i aria-hidden="true" role="presentation"
+                                                   class="elementor-menu-toggle__icon--open eicon-menu-bar"></i><i
+                                                    aria-hidden="true" role="presentation"
+                                                    class="elementor-menu-toggle__icon--close eicon-close"></i> <span
+                                                    class="elementor-screen-only">Menu</span>
+                                            </div>
+                                            <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container"
+                                                 role="navigation" aria-hidden="true"
+                                                 style="top: 34px; width: 1078px; left: 0px;">
+                                                <ul id="menu-2-850287e" class="elementor-nav-menu"
+                                                    data-smartmenus-id="16579721865071086">
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-92">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/homepage/"
+                                                           aria-current="page"
+                                                           class="elementor-item elementor-item-active" tabindex="-1">Home</a>
+                                                    </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/collection/"
+                                                           class="elementor-item" tabindex="-1">Collection</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-94">
+                                                        <a href="#"
+                                                           class="elementor-item elementor-item-anchor has-submenu"
+                                                           tabindex="-1" id="sm-16579721865071086-1"
+                                                           aria-haspopup="true" aria-controls="sm-16579721865071086-2"
+                                                           aria-expanded="false">Pages<span class="sub-arrow"><i
+                                                                class="fas fa-angle-down"></i></span></a>
+                                                        <ul class="sub-menu elementor-nav-menu--dropdown"
+                                                            id="sm-16579721865071086-2" role="group" aria-hidden="true"
+                                                            aria-labelledby="sm-16579721865071086-1"
+                                                            aria-expanded="false">
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/about-us/"
+                                                                   class="elementor-sub-item" tabindex="-1">About Us</a>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-98">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/road-map/"
+                                                                   class="elementor-sub-item" tabindex="-1">Road Map</a>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/faq/"
+                                                                   class="elementor-sub-item" tabindex="-1">FAQ</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/testimonials/"
+                                                                   class="elementor-sub-item"
+                                                                   tabindex="-1">Testimonials</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-101">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/merchandise/"
+                                                                   class="elementor-sub-item has-submenu" tabindex="-1"
+                                                                   id="sm-16579721865071086-3" aria-haspopup="true"
+                                                                   aria-controls="sm-16579721865071086-4"
+                                                                   aria-expanded="false">Merchandise<span
+                                                                        class="sub-arrow"><i
+                                                                        class="fas fa-angle-down"></i></span></a>
+                                                                <ul class="sub-menu elementor-nav-menu--dropdown"
+                                                                    id="sm-16579721865071086-4" role="group"
+                                                                    aria-hidden="true"
+                                                                    aria-labelledby="sm-16579721865071086-3"
+                                                                    aria-expanded="false">
+                                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102">
+                                                                        <a href="https://templatekits.themewarrior.com/mint/product/hoodie/"
+                                                                           class="elementor-sub-item" tabindex="-1">Product
+                                                                            Details</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/login-page/"
+                                                                   class="elementor-sub-item" tabindex="-1">Login</a>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/track-order/"
+                                                                   class="elementor-sub-item" tabindex="-1">Track
+                                                                    Order</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/team/"
+                                                                   class="elementor-sub-item" tabindex="-1">Team</a>
+                                                            </li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/404/"
+                                                                   class="elementor-sub-item" tabindex="-1">404</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-107">
+                                                                <a href="https://templatekits.themewarrior.com/mint/template-kit/coming-soon/"
+                                                                   class="elementor-sub-item" tabindex="-1">Coming
+                                                                    soon</a></li>
+                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108">
+                                                                <a href="https://templatekits.themewarrior.com/mint/?elementor_library=popup-banners"
+                                                                   class="elementor-sub-item" tabindex="-1">Popups
+                                                                    Banner</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/blog/"
+                                                           class="elementor-item" tabindex="-1">Blog</a></li>
+                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96">
+                                                        <a href="https://templatekits.themewarrior.com/mint/template-kit/contact-us/"
+                                                           class="elementor-item" tabindex="-1">Contact</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-28d74a6"
+                 data-id="28d74a6" data-element_type="column">
+                <div class="elementor-widget-wrap elementor-element-populated">
+                    <div class="elementor-element elementor-element-f2fa7eb elementor-align-right elementor-widget elementor-widget-button"
+                         data-id="f2fa7eb" data-element_type="widget" data-widget_type="button.default">
+                        <div class="elementor-widget-container">
+                            <div class="elementor-button-wrapper">
+                                <a href="#"
+                                   class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bob"
+                                   role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Join Discord</span>
+		</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
